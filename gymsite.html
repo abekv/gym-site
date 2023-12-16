@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>abek's gym</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,500&display=swap"
+  rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,500&family=Signika+Negative:wght@300&display=swap"
+  rel="stylesheet">
+<style>
+  body {
+    margin: 0px;
+    padding: 0px;
+    background: url('img/bg.jpg.jpg');
+    height: 1175px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .left {
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    border-radius: 5px;
+    left: 20px;
+  }
+
+  .left img {
+    width: 105px;
+  }
+
+  .mid {
+    display: block;
+    width: 55%;
+    margin: 2px auto;
+  }
+
+  .right {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    display: inline-block;
+  }
+
+  .navbar {
+    display: flex;
+  }
+
+  .navbar li {
+    list-style: none;
+    display: inline-block;
+    padding: 34px 23px;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .navbar li a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 23px;
+    text-align: center;
+  }
+
+  .navbar li a:hover,
+  .navbar li a.active {
+    text-decoration: underline;
+    color: rgb(7, 7, 7);
+    background-color: rgb(177, 184, 185);
+    border-radius: 15px;
+  }
+
+  .btn {
+    font-family: 'Playfair Display', serif;
+    background-color: rgb(16, 35, 16);
+    color: white;
+    display: flex;
+    padding: 4px;
+    margin: 5px;
+    width: 90px;
+    cursor: pointer;
+    text-align: center;
+    border: solid rgb(62, 96, 62);
+    border-radius: 6px;
+    text-decoration: none;
+  }
+
+  .btn:hover {
+    background-color: rgb(62, 86, 62);
+    color: white;
+    text-decoration: underline;
+  }
+
+  .formhead {
+    position: relative;
+    top: 65px;
+    margin-left: 69px;
+    padding: 20px;
+  }
+
+  form {
+    position: relative;
+    top: 90px;
+  }
+
+  .form-group input:hover {
+    background-color: rgb(235, 244, 244);
+    ;
+  }
+
+  .btn2:hover {
+    background-color: rgb(235, 244, 244);
+    ;
+  }
+
+  .form-group input {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: x-large;
+    text-align: center;
+    display: block;
+    width: 355px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 21px 197px;
+    border-radius: 17px;
+    background-color: rgb(214, 243, 243);
+    color: black;
+  }
+
+  .choice {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: x-large;
+    text-align: center;
+    display: block;
+    width: 355px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 21px 197px;
+    border-radius: 17px;
+    background-color: rgb(214, 243, 243);
+    color: black;
+  }
+
+  .selection {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: x-large;
+    text-align: center;
+    display: block;
+    width: 355px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 21px 197px;
+    border-radius: 17px;
+    background-color: rgb(214, 243, 243);
+    color: black;
+  }
+
+  .btn2 {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: x-large;
+    text-align: center;
+    display: inline-block;
+    width: 140px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 21px 120px;
+    border-radius: 17px;
+    background-color: rgb(214, 243, 243);
+    color: black
+  }
+</style>
+
+<body>
+  <header class="header">
+    <div class="left">
+      <!-- for logo -->
+      <img src="img/pngwing.com.png" alt="">
+    </div>
+    <div class="mid">
+      <!-- for navigation -->
+      <ul class="navbar">
+        <h1>Abek's Gym</h1>
+        <li> <a href="#">home</a></li>
+        <li> <a href="#">about us</a></li>
+        <li> <a href="#">products</a></li>
+        <li> <a href="#">contact us</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <!-- for social media handles -->
+      <a href="https://contacts.google.com/" class="btn" target="_blank">Call us</a>
+      <a href="https://mail.google.com/mail/u/0/" class="btn" target="_blank">Email</a>
+      <a href="https://www.facebook.com/" class="btn" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/" class="btn" target="_blank">Instagram</a>
+    </div>
+    <div class="container">
+      <h1 class="formhead">To Join Our Gym Fill The Queries Below</h1>
+      <form action="noaction.php">
+        <div class="form-group">
+          <input type="text" placeholder="Enter Your Name">
+          <input type="number" placeholder="Enter Your Age">
+          <input type="text" placeholder="Enter Your Email">
+          <input type="text" placeholder="Enter Your Number">
+          <input type="number" placeholder="Enter Your weight">
+        </div>
+        <div class="choice">
+          Gender:Male <input type="radio" name="mygender"> Female <input type="radio" name="mygender"> Other <input
+            type="radio" name="mygender">
+        </div>
+        <div class="selection">
+          <label for="purpose">purpose to join our gym</label>
+          <select name="" id=""></select>
+        </div>
+        <button class="btn2">Submit</button>
+        <button class="btn2">clear</button>
+      </form>
+    </div>
+
+  </header>
+</body>
+
+</html>
